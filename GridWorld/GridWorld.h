@@ -69,21 +69,7 @@ public:
 		// your constructor code here!
 	}
 	~GridWorld() {
-		node *tmp ;
-	/*	for (int i = 0; i < wRow; i++)
-		{
-			for (int j = 0; j < wCol; j++)
-			{
-				while (dArr[i][j].dfront != nullptr)
-				{
-					tmp = dArr[i][j].dfront;
-					dArr[i][j].dfront = dArr[i][j].dfront->next;
-					delete tmp;
-					
-				}
-			}
-		}*/
-	
+		node *tmp ;	
 
 		for (node *header = deadPool.dfront; header != nullptr; header = header->next)
 		{
